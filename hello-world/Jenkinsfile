@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Static Analysis') {
             steps {
-                echo 'Run the static analysis to the code' 
+                echo 'Run the static analysis by Jonathan' 
             }
         }
         stage('Compile') {
@@ -18,7 +18,8 @@ pipeline {
         }
         stage('Run Unit Tests') {
             steps {
-                echo 'Run unit tests from the source code' 
+                echo 'Run unit tests'
+                echo 'from the Jenkins file'
             }
         }
         stage('Run Integration Tests') {
